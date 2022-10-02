@@ -1,0 +1,43 @@
+html {
+	min-height: 100vh;
+}
+
+body {
+	overflow-x: hidden;
+	display: flex;
+	font-family: 'Rubik', sans-serif;
+	color: #11101d;
+	margin: 0;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+
+
+/*animation background*/
+.background {
+	background-size: cover;
+	background-image: url("../img/background.jpg");
+	min-height: 100vh;
+	width: 100vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -2;
+	animation: slide 140s linear infinite;
+
+}
+
+@keyframes slide {
+	0% {
+		background-position: 0% 0%;
+	}
+
+	50% {
+		background-position: 100% 0%;
+	}
+
+	100% {
+		background-position: 0% 0%;
+	}
+}
